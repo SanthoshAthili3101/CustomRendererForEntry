@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CustomRendererForEntry.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Entry
+                Background="AliceBlue"
+                Placeholder="Checking Purpose"
+                TextColor="Green" />
+
+
+            <Button
+                x:Name="CounterBtn"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Click me" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
